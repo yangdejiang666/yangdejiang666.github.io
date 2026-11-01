@@ -88137,68 +88137,23 @@ function Oee() {
 var Hi = re(Xe(), 1),
   Og = {
     name: "yangdejiang666",
-    alias: "\u6C15\u6C18\u6C1A",
-    firstRelease: "\u5C0F\u7EA2\u4E66",
-    links: [],
-  },
-  p8 = {
-    name: "Quincy.",
-    links: [
-      {
-        id: "xiaohongshu",
-        label: "\u5C0F\u7EA2\u4E66",
-        handle: "Quincy.",
-        url: "https://www.xiaohongshu.com/user/profile/628e0e2e0000000021021721",
-        note: "\u4E2A\u4EBA\u4E3B\u9875",
-      },
-      {
-        id: "bilibili",
-        label: "\u54D4\u54E9\u54D4\u54E9",
-        handle: "POPE_Quincy",
-        url: "https://space.bilibili.com/192864531",
-        note: "\u4E2A\u4EBA\u4E3B\u9875",
-      },
-      {
-        id: "douyin",
-        label: "\u6296\u97F3",
-        handle: "Quincy.",
-        url: "https://v.douyin.com/TLGEg_43E6s/",
-        note: "\u4E2A\u4EBA\u4E3B\u9875",
-      },
-    ],
   };
 function Lee() {
   return (0, Hi.jsx)("div", {
     className: "creatorcredits",
-    children: [Og, p8].map((t, e) =>
-      (0, Hi.jsxs)(
-        "div",
-        {
-          className: "creatorline",
-          children: [
-            (0, Hi.jsx)("span", {
-              className: "creatorline__copyright",
-              children: e === 0 ? "\xA9 2026" : "",
-            }),
-            (0, Hi.jsx)("span", { className: "creatorline__name", children: t.name }),
-            t.links.map((n) =>
-              (0, Hi.jsx)(
-                "a",
-                {
-                  href: n.url,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  title: `${n.label} ${n.handle}${n.note ? ` \xB7 ${n.note}` : ""}`,
-                  children: n.label,
-                },
-                n.id,
-              ),
-            ),
-          ],
-        },
-        t.name,
-      ),
-    ),
+    children: (0, Hi.jsxs)("div", {
+      className: "creatorline",
+      children: [
+        (0, Hi.jsx)("span", {
+          className: "creatorline__copyright",
+          children: "\xA9 2026",
+        }),
+        (0, Hi.jsx)("span", {
+          className: "creatorline__name",
+          children: Og.name,
+        }),
+      ],
+    }),
   });
 }
 function Pee() {
@@ -88219,61 +88174,14 @@ function Pee() {
               }),
             ],
           }),
-          (0, Hi.jsx)("p", { className: "creatorpanel__name", children: Og.name }),
-          (0, Hi.jsxs)("p", {
+          (0, Hi.jsx)("p", {
+            className: "creatorpanel__name",
+            children: Og.name,
+          }),
+          (0, Hi.jsx)("p", {
             className: "creatorpanel__note",
-            children: [
-              "\u672C\u7AD9\u4E3A\u4E2A\u4EBA\u521B\u4F5C\u7684\u5929\u6587\u79D1\u666E\u53EF\u89C6\u5316\u4F5C\u54C1\uFF08",
-              Og.alias,
-              " / ",
-              Og.name,
-              "\uFF09\uFF0C",
-              Og.firstRelease,
-              "\u9996\u53D1\u3002\u8F6C\u8F7D\u3001\u5F15\u7528\u8BF7\u6CE8\u660E\u4F5C\u8005\u4E0E\u51FA\u5904\u3002",
-            ],
-          }),
-          (0, Hi.jsx)("ul", {
-            className: "creatorpanel__links",
-            children: Og.links.map((n) =>
-              (0, Hi.jsx)(
-                "li",
-                {
-                  children: (0, Hi.jsxs)("a", {
-                    href: n.url,
-                    target: "_blank",
-                    rel: "noreferrer",
-                    children: [
-                      (0, Hi.jsx)("b", { children: n.label }),
-                      (0, Hi.jsx)("span", { children: n.handle }),
-                      (0, Hi.jsx)("em", { children: n.note }),
-                    ],
-                  }),
-                },
-                n.id,
-              ),
-            ),
-          }),
-          (0, Hi.jsx)("p", { className: "creatorpanel__name", children: p8.name }),
-          (0, Hi.jsx)("ul", {
-            className: "creatorpanel__links",
-            children: p8.links.map((n) =>
-              (0, Hi.jsx)(
-                "li",
-                {
-                  children: (0, Hi.jsxs)("a", {
-                    href: n.url,
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    children: [
-                      (0, Hi.jsx)("b", { children: n.label }),
-                      (0, Hi.jsx)("span", { children: n.handle }),
-                      (0, Hi.jsx)("em", { children: n.note }),
-                    ],
-                  }),
-                },
-                n.id,
-              ),
-            ),
+            children:
+              "\u672C\u7AD9\u7531 yangdejiang666 \u4E2A\u4EBA\u521B\u4F5C\u7684\u5929\u6587\u79D1\u666E\u53EF\u89C6\u5316\u4F5C\u54C1\u3002\u8F6C\u8F7D\u3001\u5F15\u7528\u8BF7\u6CE8\u660E\u4F5C\u8005\u4E0E\u51FA\u5904\u3002",
           }),
           (0, Hi.jsxs)("p", {
             className: "creatorpanel__foot",
