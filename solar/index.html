@@ -8,9 +8,22 @@
       name="description"
       content="一张可交互的太阳系人类造物图谱：滚轮与拖拽漫游，点击任一航天器推进镜头，进入它的任务档案。"
     />
+    <script>
+      (() => {
+        window.__SOLAR_ASTRA_BASE_URL__ = new URL("../", location.href).href;
+        const legacy = new URLSearchParams(location.search).get("generation") === "legacy";
+        window.__SOLAR_ASTRA_LEGACY__ = legacy;
+        if (legacy && !/\/legacy\/$/.test(location.pathname)) {
+          const target = new URL("./legacy/", location.href);
+          target.search = location.search;
+          location.replace(target);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <link rel="stylesheet" href="/solar/assets/solar.css"/><script type="module" src="/solar/assets/solar.js"></script>
+    <link rel="stylesheet" href="./assets/solar.css" />
+    <script type="module" src="./assets/solar.js"></script>
   </body>
 </html>

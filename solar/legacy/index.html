@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>HUMAN ARTIFACTS · A Cartography of Humanity in the Solar System · 旧版</title>
+    <meta name="description" content="HUMAN ARTIFACTS 上一代太阳系图谱界面。" />
+    <meta name="theme-color" content="#020608" />
+    <script>
+      (() => {
+        window.__SOLAR_ASTRA_BASE_URL__ = new URL("../../", location.href).href;
+        window.__SOLAR_ASTRA_LEGACY__ = true;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <link rel="stylesheet" href="./assets/solar.css" />
+    <script type="module" src="./assets/solar.js"></script>
+  </body>
+</html>
